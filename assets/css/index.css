@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+
+/* body {
+  font-family: "Open Sans", sans-serif;
+  color: #0c0c0c;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #212A3E, #9BA4B5);
+  background-size: cover;
+  backdrop-filter: blur(100px);
+  background-repeat: no-repeat;
+}
+ */
+
+/* Start Hero */
+#hero{
+  /* width: 100%; */
+  height: auto;
+  padding: 5% 12%;
+  position: relative;
+}
+
+.hero-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* @keyframes updown {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}  */
+
+.hero-highligt {
+  flex-basis: 50%;
+  max-width: 600px;
+}
+
+.highlight-news {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.highlight-news h3{
+  margin: 0 8px 0 0;
+}
+
+.hnews-box {
+  background-color: rgba(0, 0, 0, 0.148);
+  border-radius: 12px;
+  padding: 15px;
+  z-index: 20;
+  transition: all 0.7s ease;
+}
+
+.hnews-box:hover{
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.586);
+  transform: translate(0px, -15px); 
+  box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.hnews-content {
+  max-width: 600px;
+}
+
+.hnews-content h5 {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.hnews-content p,
+.cat-item p{
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.hnews-box img {
+  border-radius: 10px;
+  max-width: 600px;
+  min-width: 500px;
+}
+
+.hero-slogan {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-slogan {
+  min-width: 420px;
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-cat {
+  min-width: 420px;
+  max-width: 530px;
+}
+
+.cat-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-item {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 150px;
+  background-color: rgba(0, 0, 0, 0.148);
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 0.7s ease;
+}
+
+.cat-item:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.586);
+  transform: translate(0px, -15px); 
+  box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cat-item img {
+  max-width: 200px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  margin-right: 20px;
+}
+
+.detail-slogan h1, p {
+  margin: 0 0 30px 0;
+}
+
+
+
+/* End Hero */
+
+/* Start Services */
+#service {
+  height: auto;
+  padding: 100px 10%;
+  position: relative;
+  /* background-color: #fff; */
+  /* background: linear-gradient(to bottom right, #F1F6F9, #212A3E); */
+  background-color: #212A3E;
+  background-size: cover;
+
+}
+
+#service .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 20;
+}
+
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.service-box {
+  width: 310px;
+  height: 170px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 5px;
+}
+
+.service-box {
+  width: 310px;
+  height: 170px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 5px;
+  transition: all 0.7s ease;
+}
+
+.service-box::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.service-box img {
+  min-width: 320px;
+  min-height: 180px;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(70%);
+}
+
+.service-box h5 {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 10;
+}
+
+.service-box:hover::before {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.service-box:hover {
+  transform: translate(0px, -15px) ; /* Dịch chuyển ảnh khi hover */
+  border-radius: 15px;
+}
+/* End Testes */
