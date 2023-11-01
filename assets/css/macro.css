@@ -1,0 +1,73 @@
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.macro-hero {
+  padding: 50px 15%;
+}
+
+.col-1 {
+  flex-basis: 35%;
+}
+
+.col-2 {
+  flex-basis: 60%;
+}
+
+.limited-slide {
+  width: 745px;
+}
+
+.macro-head {
+  margin: 10px 0;
+  display: flex;
+}
+
+.macro-img {
+  height: 100%;
+}
+
+.macro-head img {
+  width: 20px;
+  filter: invert(100%) brightness(200%);
+  margin-bottom: -4px;
+  transition: all 0.3s ease;
+}
+
+.macro-head img:hover {
+  filter: invert(50%) brightness(100%);
+  transform: translate(0px, -5px); 
+}
+
+.macro-head a {
+  margin: 0 5px;
+  padding: 0;
+}
+
+.macro-nav {
+  margin: 0 0 10px 0;
+}
+
+.macro-nav .nav-row {
+  display: flex;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.605);
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.122);
+  border-radius: 10px 10px 0 0;
+  width: max-content;
+}
+
+.macro-nav .bnav-item {
+  padding: 7px 20px;
+}
+
+
+.bnav-item.active {
+  background-color: rgba(0, 0, 0, 0.605);
+}

@@ -1,7 +1,14 @@
 /* HOSE  */
 
+.hose-info,
+.hnx-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .exchange-platform {
   margin: 50px 100px;
+  z-index: 10;
 }
 
 .platform {
@@ -60,8 +67,11 @@
   background-color: rgba(0, 0, 0, 0.587);
 }
 
+
+
 /* HNX  */
-.hnx-container {
+#hnx {
   background-image: url(../img/wallpaperflare.com_wallpaper.jpg);
   padding: 20px 0;
+  z-index: -2;
 }

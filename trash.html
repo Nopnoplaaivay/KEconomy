@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Toggle Heading</title>
+    <style>
+      /* Reset default margin and padding */
+      body,
+      h2,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Style for the toggle heading */
+      .toggle-heading {
+        cursor: pointer;
+      }
+
+      /* Initially hide the content */
+      .content {
+        display: none;
+      }
+
+      /* Style for the content when toggled */
+      .toggle-heading.active .content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toggle-heading">
+      <h2 class="heading">Click to Toggle</h2>
+      <div class="content">
+        <p>This is the content that will toggle.</p>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleHeading = document.querySelector(".toggle-heading");
+
+        toggleHeading.addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
