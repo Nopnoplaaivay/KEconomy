@@ -1,18 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 
-/* body {
-  font-family: "Open Sans", sans-serif;
-  color: #0c0c0c;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom right, #212A3E, #9BA4B5);
-  background-size: cover;
-  backdrop-filter: blur(100px);
-  background-repeat: no-repeat;
-}
- */
 
 /* Start Hero */
 #hero{
@@ -22,22 +9,12 @@
   position: relative;
 }
 
-.hero-row {
+.hero-row{
+  margin: auto;
+  max-width: 1280px;
   display: flex;
   justify-content: space-between;
 }
-
-/* @keyframes updown {
-  0% {
-    transform: translateY(-30px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-30px);
-  }
-}  */
 
 .hero-highligt {
   flex-basis: 50%;
@@ -142,8 +119,6 @@
   margin: 0 0 30px 0;
 }
 
-
-
 /* End Hero */
 
 /* Start Services */
@@ -153,7 +128,7 @@
   position: relative;
   /* background-color: #fff; */
   /* background: linear-gradient(to bottom right, #F1F6F9, #212A3E); */
-  background-color: #212A3E;
+  background-color: #212a3ebc;
   background-size: cover;
 
 }
@@ -166,9 +141,10 @@
 }
 
 .service-row {
+  max-width: 1500px;
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin: auto;
 }
 
 .service-box {

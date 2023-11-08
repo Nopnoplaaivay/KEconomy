@@ -3,12 +3,143 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>K-ECONOMY</title>
+    <title>KECONOMY</title>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/macro.css" />
+    <style>
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+      }
+
+      .macro-hero,
+      .macro-board {
+        max-width: 1380px;
+        margin: auto;
+      }
+
+      .macro-hero .bnav-items {
+        padding: 0;
+      }
+
+      .col-1 {
+        flex-basis: 35%;
+      }
+
+      .col-2 {
+        flex-basis: 60%;
+      }
+
+      .limited-slide {
+        width: 745px;
+      }
+
+      .macro-head {
+        margin: 20px 0;
+        display: flex;
+      }
+
+      .macro-img {
+        height: 100%;
+      }
+
+      .macro-head img {
+        width: 20px;
+        filter: invert(100%) brightness(200%);
+        margin-bottom: -4px;
+        transition: all 0.3s ease;
+      }
+
+      .macro-head img:hover {
+        filter: invert(50%) brightness(100%);
+        transform: translate(0px, -5px);
+      }
+
+      .macro-head a {
+        margin: 0 5px;
+        padding: 0;
+      }
+
+      .macro-nav {
+        margin: 0 0 10px 0;
+      }
+
+      .macro-nav .nav-row {
+        display: flex;
+        justify-content: left;
+        margin: 0;
+        padding: 0;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.605);
+        overflow: hidden;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.122);
+        border-radius: 10px 10px 0 0;
+        width: max-content;
+      }
+
+      .macro-nav .bnav-item {
+        padding: 7px 20px;
+      }
+
+      .macro-board .macro-nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      .macro-board .nav-row {
+        width: 100%;
+      }
+
+      .macro-board .bnav-items {
+        margin: 0;
+      }
+
+      .macro-table {
+        flex-basis: 60%;
+      }
+
+      .sub-news h6 {
+        color: white;
+      }
+
+      .sub-news p {
+        font-size: 15px;
+      }
+
+      .macro-news {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.122);
+        border-radius: 10px;
+        padding: 10px 15px;
+      }
+
+      .macro-news .sub-news {
+        margin-bottom: 10px;
+        padding: 15px 18px;
+      }
+
+      .macro-news .macro-head {
+        margin: 10px;
+      }
+
+      .macro-table th,
+      .macro-table td {
+        text-align: center;
+      }
+
+      .macro-table img {
+        margin-bottom: 20px;
+      }
+    </style>
   </head>
 
   <body>
+
+    <div class="background"></div>
+
     <!-- header section -->
     <section id="header"></section>
     <!-- end header section  -->
@@ -75,10 +206,226 @@
       </div>
     </div>
 
-    <div class="container"></div>
+    <div class="container">
+      <div class="macro-board">
+        <div class="macro-nav">
+          <div class="nav-row">
+            <div class="nav-content">
+              <ul class="bnav-items">
+                <li class="bnav-item">
+                  <a href="#">Tổng Quan</a>
+                </li>
+                <li class="bnav-item idx-0">
+                  <a href="#" class="active">GDP</a>
+                </li>
+                <li class="bnav-item idx-1">
+                  <a href="#">CPI</a>
+                </li>
+                <li class="bnav-item idx-2">
+                  <a href="#">Sản xuất công nghiệp</a>
+                </li>
+                <li class="bnav-item idx-3">
+                  <a href="#">Bán lẻ</a>
+                </li>
+                <li class="bnav-item idx-4">
+                  <a href="#">Xuất - nhập khẩu</a>
+                </li>
+                <li class="bnav-item idx-5">
+                  <a href="#">FDI</a>
+                </li>
+                <li class="bnav-item idx-6">
+                  <a href="#">Tín dụng</a>
+                </li>
+                <li class="bnav-item idx-7">
+                  <a href="#">Thị trưởng mở</a>
+                </li>
+                <li class="bnav-item idx-8">
+                  <a href="#">Tỷ giá & Lãi suất</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="macro-table">
+            <div>
+              <div class="limited-slide">
+                <div class="slide-show">
+                  <div class="list-imgs">
+                    <img src="../img/gdp-hienhanh.png" alt="" />
+                    <img src="../img/cpi-hh.png" alt="" />
+                    <img src="../img/sx-cn.png" alt="" />
+                    <img src="../img/banle.png" alt="" />
+                    <img src="../img/xnk.png" alt="" />
+                    <img src="../img/fdi.png" alt="" />
+                    <img src="../img/tindung.png" alt="" />
+                    <img src="../img/ttrg-mo.png" alt="" />
+                    <img src="../img/tygia-ls.png" alt="" />
+                  </div>
+                  <div class="btns">
+                    <div class="btn-l btn">
+                      <img src="../img/svg/left-svgrepo-com.svg" alt="left" />
+                    </div>
+                    <div class="btn-r btn">
+                      <img src="../img/svg/right-svgrepo-com.svg" alt="left" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="business-table">
+              <table class="table-content">
+                <thead>
+                  <tr>
+                    <th rowspan="2">STT</th>
+                    <th rowspan="2">Chỉ tiêu</th>
+                    <th rowspan="2">Đơn vị tính</th>
+                    <th colspan="2">Số liệu mới nhất</th>
+                  </tr>
+                  <tr>
+                    <th>Đồ thị</th>
+                    <th>Giá trị</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Chỉ số giá tiêu dùng</td>
+                    <td>%</td>
+                    <td>Tháng 9/2023</td>
+                    <td>1.08</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Tăng trưởng GDP</td>
+                    <td>%</td>
+                    <td>Quý 3/2023</td>
+                    <td>5.33</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>GDP theo giá hiện hành</td>
+                    <td>Tỷ VNĐ</td>
+                    <td>Quý 3/2023</td>
+                    <td>2,540,588</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>GDP theo giá cố định (2010)</td>
+                    <td>Tỷ VNĐ</td>
+                    <td>Quý 3/2023</td>
+                    <td>1,450,322</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Tổng trị giá Xuất khẩu</td>
+                    <td>Triệu USD</td>
+                    <td>Tháng 9/2023</td>
+                    <td>31,410</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Tổng trị giá Nhập khẩu</td>
+                    <td>Triệu USD</td>
+                    <td>Tháng 9/2023</td>
+                    <td>29,120</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Toàn ngành công nghiệp</td>
+                    <td>%</td>
+                    <td>Tháng 9/2023</td>
+                    <td>0.1</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>FDI Giải ngân</td>
+                    <td>Tỷ VNĐ</td>
+                    <td>Tháng 9/2023</td>
+                    <td>2.88</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Cung tiền M2 (MoM)</td>
+                    <td>Tỷ VNĐ</td>
+                    <td>Tháng 7/2023</td>
+                    <td>14,640,943</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Dân số</td>
+                    <td>Triệu người</td>
+                    <td>2022</td>
+                    <td>99.46</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="macro-news">
+              <div class="macro-head">
+                <h5>Tin tức vĩ mô</h5>
+              </div>
+              <div class="sub-news">
+                <h6>
+                  Đại biểu Vũ Tiến Lộc: Thể chế tốt thì khai thông nguồn lực và
+                  giúp tiền đẻ ra tiền
+                </h6>
+                <div class="float-news">
+                  <img
+                    src="../img/bo-gau-cho-diem-mua_951694.jpg"
+                    alt=""
+                    class="float-left"
+                  />
+                  <p>
+                    Theo Đại biểu Quốc hội Vũ Tiến Lộc, để phục hồi, phát triển
+                    kinh tế, đại biểu khẳng định, điều quan trọng là cải cách
+                    thể chế, “thể chế tốt thì khai thông nguồn lực và giúp tiền
+                    đẻ ra tiền, còn thể chế tồi thì có tiền cũng không tiêu
+                    được”.
+                  </p>
+                </div>
+              </div>
+              <div class="sub-news">
+                <h6>
+                  PMI tháng 10/2023: Sản lượng giảm nhẹ khi số lượng đơn đặt
+                  hàng mới tăng yếu
+                </h6>
+                <div class="float-news">
+                  <img src="../img/ava-dien-tu.jpg" alt="" class="float-left" />
+                  <p>
+                    Chỉ số Nhà Quản trị Mua hàng - Manufacturing Purchasing
+                    Managers' Index (PMI) ngành Sản xuất Việt Nam của S&P Global
+                    vẫn nằm dưới ngưỡng 50 điểm trong tháng 10, khi giảm về mức
+                    49.6 so với 49.7 điểm của tháng 9. Kết quả này cho thấy sức
+                    khỏe của ngành sản xuất suy giảm tháng thứ hai liên tiếp.
+                  </p>
+                </div>
+              </div>
+              <div class="sub-news">
+                <h6>
+                  Kinh tế Thành phố Hồ Chí Minh tiếp tục duy trì đà tăng trưởng
+                  tích cực
+                </h6>
+                <div class="float-news">
+                  <img src="../img/bong-bong.png" alt="" class="float-left" />
+                  <p>
+                    Chủ tịch Ủy ban Nhân dân Thành phố Hồ Chí Minh cho rằng,
+                    trong 10 tháng, kinh tế-xã hội thành phố giữ được đà tăng
+                    trưởng ổn định với nhiều chỉ số tích cực về sản xuất, tiêu
+                    dùng, du lịch.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section id="footer"></section>
     <script type="module" src="../js/macro.js"></script>
-    <script src="../js/slideshow.js"></script>
+    <!-- <script src="../js/slideshow.js"></script> -->
   </body>
 </html>

@@ -122,6 +122,9 @@
       .sign-up a{
         color: #999;
       }
+      .checkbox {
+        color: #000000;
+      }
     </style>
   </head>
 
@@ -136,7 +139,15 @@
           </div>
           <div class="login-form col">
             <form action="index.html">
-              <span class="login-span">WELCOME TO KECONOMY</span>
+              <span class="login-span">SIGN UP</span>
+              <div class="form-field">
+                <input type="text" class="form-input" placeholder="" />
+                <label for="fullname" class="form-label">Full Name</label>
+              </div>
+              <div class="form-field">
+                <input type="text" class="form-input" placeholder="" />
+                <label for="email" class="form-label">@Email</label>
+              </div>
               <div class="form-field">
                 <input type="text" class="form-input" placeholder="" />
                 <label for="username" class="form-label">Username</label>
@@ -145,14 +156,18 @@
                 <input type="password" class="form-input" placeholder=" " />
                 <label for="passWord" class="form-label">PassWord</label>
               </div>
-              <div class="forgotten">
-                <a href="#">Password Forgotten?</a>
+              <div class="form-field">
+                <input type="password" class="form-input" placeholder=" " />
+                <label for="confirm-passWord" class="form-label">Confirm PassWord</label>
+              </div>
+              <div class="form-field">
+                <p class="checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <label for="agreement">Tôi đồng ý với Điều khoản và Chính sách bảo mật</label>
+                </p>
               </div>
               <div class="login-button">
-                <button class="submit-login">SIGN IN</button>
-              </div>
-              <div class="sign-up">
-                <a href="signup.html">Create New Account</a>
+                <button class="submit-login">SIGN UP</button>
               </div>
             </form>
           </div>

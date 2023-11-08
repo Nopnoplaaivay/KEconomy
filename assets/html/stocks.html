@@ -5,10 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>K-ECONOMY</title>
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/stock.css" />
+    <style>
+      body {
+        height: auto;
+        background-image: url(../img/wallpaperflare.com_wallpaper.jpg);
+        backdrop-filter: blur(10px);
+      }
+
+      .normal {
+        color: white;
+      }
+
+      .stock-container {
+        padding: 20px 12%;
+      }
+
+      .stock-container p {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+
+      .sub-news {
+        margin-bottom: 20px;
+      }
+
+      .stock-container img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      /* stock tab  */
+      .stock-tab {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+      }
+
+      .finance-header {
+        margin: 20px;
+      }
+
+      .ohlc {
+        margin: 0;
+        padding: 5px;
+        display: flex;
+      }
+
+      .ohlc li {
+        display: flex;
+      }
+
+      .ohlc h6 {
+        margin: 3px;
+        font-weight: 600;
+      }
+      .ratio-box {
+        margin: 20px 0;
+      }
+
+      .ratio p {
+        text-align: right;
+      }
+
+      .ratehead {
+        color: #3ca7d2;
+      }
+      /* end stock tab  */
+
+      /* stock news  */
+      .stock-news {
+        flex-basis: 40%;
+      }
+
+      .news-col {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .snew-content {
+        display: flex;
+      }
+
+      .snew-content h5,
+      .snew-conntent h6 {
+        margin-bottom: 10px;
+      }
+
+      .snew-content img {
+        width: 250px;
+        margin-right: 20px;
+        height: 100%;
+      }
+
+      /* read-most */
+      .most-read {
+        flex-basis: 20%;
+      }
+
+      .line {
+        height: 4px;
+        background-color: #ededed;
+        margin: 10px auto 10px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+      }
+
+      .rank {
+        flex-basis: 20%;
+        max-width: 25px;
+        max-height: 25px;
+        display: flex;
+        justify-content: center;
+        background-color: #ededed;
+        border-radius: 100%;
+        margin: 10px 10px 10px 2px;
+      }
+    </style>
   </head>
 
   <body>
+
+    
     <!-- header section -->
     <section id="header"></section>
     <!-- end header section  -->
@@ -223,56 +342,66 @@
             <div class="sub-news">
               <div class="snew-content">
                 <div class="rank">
-                  <h5 style="color: black;">1</h5>
+                  <h5 style="color: black">1</h5>
                 </div>
                 <div class="news-text">
-                  <p>MWG chỉ lãi 77 tỷ sau 9 tháng, gửi 20,000 tỷ đồng vào ngân hàng</p>
-                  <h6 style="font-size: 12px;">30/10 18:03</h6>
+                  <p>
+                    MWG chỉ lãi 77 tỷ sau 9 tháng, gửi 20,000 tỷ đồng vào ngân
+                    hàng
+                  </p>
+                  <h6 style="font-size: 12px">30/10 18:03</h6>
                 </div>
               </div>
             </div>
             <div class="sub-news">
               <div class="snew-content">
                 <div class="rank">
-                  <h5 style="color: black;">2</h5>
+                  <h5 style="color: black">2</h5>
                 </div>
                 <div class="news-text">
                   <p>Dow Jones nhảy vọt 500 điểm</p>
-                  <h6 style="font-size: 12px;">31/10 06:52</h6>
+                  <h6 style="font-size: 12px">31/10 06:52</h6>
                 </div>
               </div>
             </div>
             <div class="sub-news">
               <div class="snew-content">
                 <div class="rank">
-                  <h5 style="color: black;">3</h5>
+                  <h5 style="color: black">3</h5>
                 </div>
                 <div class="news-text">
-                  <p>Đại gia Hà Nội thắng đấu giá đất vàng Thủy Tạ Đà Lạt, gấp 5 lần khởi điểm</p>
-                  <h6 style="font-size: 12px;">30/10 21:46
-                  </h6>
+                  <p>
+                    Đại gia Hà Nội thắng đấu giá đất vàng Thủy Tạ Đà Lạt, gấp 5
+                    lần khởi điểm
+                  </p>
+                  <h6 style="font-size: 12px">30/10 21:46</h6>
                 </div>
               </div>
             </div>
             <div class="sub-news">
               <div class="snew-content">
                 <div class="rank">
-                  <h5 style="color: black;">4</h5>
+                  <h5 style="color: black">4</h5>
                 </div>
                 <div class="news-text">
-                  <p>Nhịp đập Thị trường 31/10: Tiền vào hối hả lúc cuối phiên</p>
-                  <h6 style="font-size: 12px;">37 phút trước</h6>
+                  <p>
+                    Nhịp đập Thị trường 31/10: Tiền vào hối hả lúc cuối phiên
+                  </p>
+                  <h6 style="font-size: 12px">37 phút trước</h6>
                 </div>
               </div>
             </div>
             <div class="sub-news">
               <div class="snew-content">
                 <div class="rank">
-                  <h5 style="color: black;">5</h5>
+                  <h5 style="color: black">5</h5>
                 </div>
                 <div class="news-text">
-                  <p>Thị trường điều chỉnh trong ngắn hạn nhưng trung và dài hạn là tương lai xán lạn</p>
-                  <h6 style="font-size: 12px;">30/10 16:41</h6>
+                  <p>
+                    Thị trường điều chỉnh trong ngắn hạn nhưng trung và dài hạn
+                    là tương lai xán lạn
+                  </p>
+                  <h6 style="font-size: 12px">30/10 16:41</h6>
                 </div>
               </div>
             </div>
