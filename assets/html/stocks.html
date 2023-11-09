@@ -12,12 +12,74 @@
         backdrop-filter: blur(10px);
       }
 
+      @media screen and (max-width: 1880px) {
+        .stock-container {
+          padding: 20px 40px !important;
+        }
+      }
+      @media screen and (max-width: 1410px) {
+        .stock-container {
+          padding: 20px 40px !important;
+        }
+        .news-row {
+          flex-wrap: wrap;
+        }
+        .stock-tab ,
+        .stock-news{
+          flex-basis: 47% !important;
+        }
+        .most-read {
+          flex-basis: 50% !important;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        .stock-container {
+          padding: 20px 20px !important;
+        }
+        .stock-tab {
+          flex-basis: 58% !important;
+          order: 1;
+        }
+        .most-read {
+          flex-basis: 38% !important;
+          order: 2;
+        }
+        .stock-news {
+          order: 3;
+          flex-basis: 80% !important;
+          margin: auto;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .news-row {
+          flex-direction: column;
+        }
+        .most-read {
+          order: 3;
+        }
+        .ohlc {
+          flex-wrap: wrap;
+        }
+      }
+
+      @media screen and (max-width: 542px) {
+        .stock-news .snew-content {
+          flex-direction: column;
+        }
+        .news-img img {
+          width: 100% !important;
+          height: 200px !important;
+        }
+      }
+
+
       .normal {
         color: white;
       }
 
       .stock-container {
         padding: 20px 12%;
+        transition: 0.5s ease;
       }
 
       .stock-container p {
@@ -84,6 +146,7 @@
 
       .snew-content {
         display: flex;
+        transition: 0.5s ease;
       }
 
       .snew-content h5,
@@ -126,8 +189,6 @@
   </head>
 
   <body>
-
-    
     <!-- header section -->
     <section id="header"></section>
     <!-- end header section  -->

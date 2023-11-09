@@ -13,10 +13,18 @@
         border-radius: 8px;
       }
 
+      .container {
+        margin-bottom: 30px;
+      }
+
       .macro-hero,
       .macro-board {
         max-width: 1380px;
         margin: auto;
+      }
+
+      .macro-hero .macro-nav {
+        margin-bottom: 10px;
       }
 
       .macro-hero .bnav-items {
@@ -29,15 +37,22 @@
 
       .col-2 {
         flex-basis: 60%;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
       }
 
       .limited-slide {
-        width: 745px;
+        width: 100%;
       }
 
       .macro-head {
         margin: 20px 0;
         display: flex;
+      }
+
+      .list-imgs img {
+        width: 100%;
       }
 
       .macro-img {
@@ -133,11 +148,33 @@
       .macro-table img {
         margin-bottom: 20px;
       }
+
+      @media screen and (max-width: 1440px) {
+        .container {
+          padding: 25px;
+        }
+      }
+      @media screen and (max-width: 1240px) {
+        .container {
+          padding: 20px;
+        }
+        .row {
+          flex-wrap: wrap;
+        }
+        .macro-hero .col-1 {
+          display: none;
+        }
+        .macro-hero .col-2 {
+          flex-basis: 100%;
+        }
+        .macro-table {
+          flex-basis: 100%;
+        }
+      }
     </style>
   </head>
 
   <body>
-
     <div class="background"></div>
 
     <!-- header section -->
@@ -159,44 +196,44 @@
             </div>
           </div>
           <div class="col-2">
-            <div class="limited-slide">
-              <div class="macro-nav">
-                <div class="nav-row">
-                  <div class="nav-content">
-                    <ul class="bnav-items">
-                      <li class="bnav-item idx-0">
-                        <a href="#" class="active">GDP</a>
-                      </li>
-                      <li class="bnav-item idx-1">
-                        <a href="#">Lạm Phát</a>
-                      </li>
-                      <li class="bnav-item idx-2">
-                        <a href="#">Cán cân thương mại</a>
-                      </li>
-                      <li class="bnav-item idx-3">
-                        <a href="#">FDI</a>
-                      </li>
-                      <li class="bnav-item idx-4">
-                        <a href="#">Tỷ Giá</a>
-                      </li>
-                    </ul>
-                  </div>
+            <div class="macro-nav">
+              <div class="nav-row">
+                <div class="nav-content">
+                  <ul class="bnav-items">
+                    <li class="bnav-item idx-0">
+                      <a href="#" class="active">GDP</a>
+                    </li>
+                    <li class="bnav-item idx-1">
+                      <a href="#">Lạm Phát</a>
+                    </li>
+                    <li class="bnav-item idx-2">
+                      <a href="#">Cán cân thương mại</a>
+                    </li>
+                    <li class="bnav-item idx-3">
+                      <a href="#">FDI</a>
+                    </li>
+                    <li class="bnav-item idx-4">
+                      <a href="#">Tỷ Giá</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="slide-show">
-                <div class="list-imgs">
-                  <img src="../img/gdp-chart.png" alt="" />
-                  <img src="../img/lamphat-chart.png" alt="" />
-                  <img src="../img/cctm-chart.png" alt="" />
-                  <img src="../img/fdi-chart.png" alt="" />
-                  <img src="../img/tygia-chart.png" alt="" />
-                </div>
-                <div class="btns">
-                  <div class="btn-l btn">
-                    <img src="../img/svg/left-svgrepo-com.svg" alt="left" />
+              <div class="limited-slide">
+                <div class="slide-show">
+                  <div class="list-imgs">
+                    <img src="../img/gdp-chart.png" alt="" />
+                    <img src="../img/lamphat-chart.png" alt="" />
+                    <img src="../img/cctm-chart.png" alt="" />
+                    <img src="../img/fdi-chart.png" alt="" />
+                    <img src="../img/tygia-chart.png" alt="" />
                   </div>
-                  <div class="btn-r btn">
-                    <img src="../img/svg/right-svgrepo-com.svg" alt="left" />
+                  <div class="btns">
+                    <div class="btn-l btn">
+                      <img src="../img/svg/left-svgrepo-com.svg" alt="left" />
+                    </div>
+                    <div class="btn-r btn">
+                      <img src="../img/svg/right-svgrepo-com.svg" alt="left" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -248,31 +285,30 @@
         </div>
         <div class="row">
           <div class="macro-table">
-            <div>
-              <div class="limited-slide">
-                <div class="slide-show">
-                  <div class="list-imgs">
-                    <img src="../img/gdp-hienhanh.png" alt="" />
-                    <img src="../img/cpi-hh.png" alt="" />
-                    <img src="../img/sx-cn.png" alt="" />
-                    <img src="../img/banle.png" alt="" />
-                    <img src="../img/xnk.png" alt="" />
-                    <img src="../img/fdi.png" alt="" />
-                    <img src="../img/tindung.png" alt="" />
-                    <img src="../img/ttrg-mo.png" alt="" />
-                    <img src="../img/tygia-ls.png" alt="" />
+            <div class="limited-slide">
+              <div class="slide-show">
+                <div class="list-imgs">
+                  <img src="../img/gdp-hienhanh.png" alt="" />
+                  <img src="../img/cpi-hh.png" alt="" />
+                  <img src="../img/sx-cn.png" alt="" />
+                  <img src="../img/banle.png" alt="" />
+                  <img src="../img/xnk.png" alt="" />
+                  <img src="../img/fdi.png" alt="" />
+                  <img src="../img/tindung.png" alt="" />
+                  <img src="../img/ttrg-mo.png" alt="" />
+                  <img src="../img/tygia-ls.png" alt="" />
+                </div>
+                <div class="btns">
+                  <div class="btn-l btn">
+                    <img src="../img/svg/left-svgrepo-com.svg" alt="left" />
                   </div>
-                  <div class="btns">
-                    <div class="btn-l btn">
-                      <img src="../img/svg/left-svgrepo-com.svg" alt="left" />
-                    </div>
-                    <div class="btn-r btn">
-                      <img src="../img/svg/right-svgrepo-com.svg" alt="left" />
-                    </div>
+                  <div class="btn-r btn">
+                    <img src="../img/svg/right-svgrepo-com.svg" alt="left" />
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="business-table">
               <table class="table-content">
                 <thead>

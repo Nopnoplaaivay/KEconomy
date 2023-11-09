@@ -6,11 +6,48 @@
     <title>K-ECONOMY</title>
     <link rel="stylesheet" href="../css/main.css" />
     <style>
-
       .news-highlight {
         color: red;
       }
 
+      .news-container {
+        padding: 2% 15%;
+        transition: 0.5s ease;
+      }
+
+      @media screen and (max-width: 1440px) {
+        .news-container {
+          padding: 2% 30px;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .zone-content .row ,
+        .fzone-content .row{
+          flex-direction: column;
+        }
+        .focus-zone {
+          padding: 0px !important;
+        }
+        .fzone-content .row .sub-news {
+          margin-bottom: 20px;
+        }
+        .zone-content .row  :nth-child(1) { order: 2; }
+        .zone-content .row :nth-child(2) { order: 1; }
+        .zone-content .row :nth-child(3) { order: 3; }
+      }
+
+      @media screen and (max-width: 425px) {
+        .h-header h1{
+          font-size: 30px !important;
+        }
+        .h-header {
+          margin-bottom: 10px !important;
+        }
+        .snews-row {
+          flex-direction: column;
+        }
+      }
       /* Highlight zone  */
       .zone-content {
         display: flex;
@@ -25,7 +62,6 @@
 
       .zone-content h1 {
         text-align: center;
-        margin-left: 18px;
       }
 
       .zone-content p,
@@ -40,9 +76,6 @@
         border-radius: 10px;
       }
 
-      .news-container {
-        padding: 2% 15%;
-      }
 
       .highlight-zone {
         margin: 10px 0;
@@ -113,7 +146,7 @@
     </style>
   </head>
 
-  <body>  
+  <body>
     <div class="background"></div>
     <!-- header section -->
     <section id="header"></section>
@@ -123,8 +156,7 @@
       <div class="highlight-zone">
         <div class="zone-content">
           <div class="h-header">
-            <h1>TIN TỨC</h1>
-            <h1 class="highlight">NỔI BẬT</h1>
+            <h1>TIN TỨC NỔI BẬT</h1>
           </div>
           <div class="row">
             <div class="news-col">
@@ -364,7 +396,6 @@
               </div>
             </div>
           </div>
-          <div class="news-zone"></div>
         </div>
       </div>
     </div>
