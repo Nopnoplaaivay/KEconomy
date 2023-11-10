@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh Toán</title>
+    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+      body {
+        height: 100%;
+        min-height: 100vh;
+      }
+
+      * {
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all 0.5s ease;
+      }
+
+      .payment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+      }
+      .payment form {
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #fff;
+        width: 800px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      .package-info {
+        flex-basis: 45%;
+      }
+      .package-box {
+        border-top: 5px solid #1c145a;
+        max-width: 350px;
+        height: auto;
+        margin: 20px 0;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.289);
+        transition: 0.5s ease;
+        flex-basis: 100%;
+      }
+      .package-box:hover {
+        cursor: pointer;
+        /* transform: translate(0px, -15px);  */
+        box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.3);
+      }
+      .pk-img {
+        position: relative;
+      }
+      .pk-img img {
+        width: 100%;
+        height: 120px;
+        opacity: 0.5;
+        filter: grayscale(1) brightness(1);
+      }
+      .pk-img h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        text-align: center;
+        text-wrap: nowrap;
+        transition: 0.5s ease;
+      }
+      .pk-items {
+        padding: 10px;
+      }
+      .pk-items h4 {
+        margin: auto;
+      }
+      .payment .row {
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+
+      .payment form .p-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .payment form .p-row .p-col {
+        flex: 1 1 45%;
+      }
+
+      .payment .col {
+        flex: 1 1 45%;
+        align-items: center;
+      }
+
+      .p-title {
+        color: #130a56;
+        font-size: 25px;
+        text-transform: uppercase;
+      }
+      .detail {
+        color: #000;
+        font-size: 15px;
+        margin-left: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        list-style: circle;
+      }
+      .highlight {
+        margin: 15px 0;
+      }
+      .payment form .p-row .p-col .inputBox {
+        margin: 15px 0;
+      }
+
+      .payment form .p-row .p-col .inputBox span {
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .payment form .p-row .p-col .inputBox input {
+        width: 80%;
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-transform: none;
+      }
+
+      .payment form .p-row .p-col .inputBox input:focus {
+        border: 1px solid #000;
+      }
+
+      .payment form .p-row .p-col .flex {
+        display: flex;
+        gap: 15px;
+      }
+
+      .payment form .p-row .p-col .flex .inputBox {
+        margin-top: 5px;
+      }
+
+      .payment form .p-row .p-col .inputBox img {
+        height: 34px;
+        margin-top: 5px;
+        filter: drop-shadow(0 0 1px #000);
+      }
+
+      .payment form .submit-btn {
+        text-align: center;
+        width: 100%;
+        padding: 12px;
+        font-size: 17px;
+        background: #3a2ca6;
+        color: #fff;
+      }
+
+      .payment form .submit-btn:hover {
+        cursor: pointer;
+        background: #1c145a;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header  -->
+    <section id="header"></section>
+    <!-- end header  -->
+
+    <div class="payment">
+      <h1>Thanh Toán</h1>
+    </div>
+
+    <div class="payment">
+
+      <form action="#">
+        <div class="p-row">
+          <div class="p-col">
+            <h3 class="p-title">Gói Premium</h3>
+            <div class="package-box">
+              <a href="payment.html">
+                <div class="pk-content">
+                  <div class="pk-img">
+                    <img src="../img/stock-4.jpg" alt="" />
+                    <h3>Premium</h3>
+                  </div>
+                  <div class="pk-items">
+                    <div class="col">
+                      <h4 class="mini-bold sep-10">
+                        <img
+                          class="icon v-al-bot"
+                          src="../img/svg/money-dollars-svgrepo-com.svg"
+                          alt=""
+                        />99.99$ / Month
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="p-col">
+            <h3 class="p-title">Ưu đãi</h3>
+            <p class="highlight">Giảm 50% khi có người yêu</p>
+            <ul class="package-list">
+              <li class="detail">Đọc tin tức mới nhất không giới hạn</li>
+              <li class="detail">Sử dụng và tải về dữ liệu realtime</li>
+              <li class="detail"> 
+                Đọc báo cáo phân tích của chuyên viên phân tích cấp cao
+              </li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="payment">
+      <form action="index.html">
+        <div class="p-row">
+          <div class="p-col">
+            <h3 class="p-title">Hóa đơn thanh toán</h3>
+            <div class="inputBox">
+              <span>Họ và tên :</span>
+              <input type="text" placeholder="Vinh Khang" />
+            </div>
+            <div class="inputBox">
+              <span>Email :</span>
+              <input type="email" placeholder="example@gmail.com" />
+            </div>
+            <div class="inputBox">
+              <span>Địa chỉ :</span>
+              <input type="text" placeholder="Số nhà - Ngõ - Đường/Phố" />
+            </div>
+            <div class="inputBox">
+              <span>Thành phố :</span>
+              <input type="text" placeholder="Hà Nội" />
+            </div>
+            <div class="flex">
+              <div class="inputBox">
+                <span>Quốc Gia:</span>
+                <input type="text" placeholder="Việt Nam" />
+              </div>
+              <div class="inputBox">
+                <span>Zip code:</span>
+                <input type="text" placeholder="12345" />
+              </div>
+            </div>
+          </div>
+
+          <div class="p-col">
+            <h3 class="p-title">Phương thức thanh toán</h3>
+            <div class="inputBox">
+              <span>Các loại thẻ ngân hàng : </span>
+              <img src="../img/card_img.png" alt="" />
+            </div>
+            <div class="inputBox">
+              <span>Tên thẻ ngân hàng :</span>
+              <input type="text" placeholder="Nguyen Van A" />
+            </div>
+            <div class="inputBox">
+              <span>Mã thẻ ngân hàng :</span>
+              <input type="number" placeholder="1111-2222-5555-8888" />
+            </div>
+            <div class="inputBox">
+              <span>Tháng hết hạn :</span>
+              <input type="text" placeholder="Tháng 12" />
+            </div>
+            <div class="flex">
+              <div class="inputBox">
+                <span>Năm hết hạn :</span>
+                <input type="number" placeholder="2030" />
+              </div>
+              <div class="inputBox">
+                <span>CCV :</span>
+                <input type="text" placeholder="1807" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Xác nhận thanh toán" class="submit-btn" />
+      </form>
+    </div>
+
+    <!-- footer  -->
+    <section id="footer"></section>
+    <!-- end footer  -->
+
+    <script type="module" src="../js/premium.js"></script>
+  </body>
+</html>

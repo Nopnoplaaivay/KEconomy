@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doanh nghiệp</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+      /* HOSE  */
+
+      .hose-info,
+      .hnx-info {
+        margin: auto;
+        max-width: 1380px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .exchange-platform {
+        padding: 50px 100px;
+        z-index: 10;
+      }
+
+      .platform {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 20px 0;
+      }
+
+      .platform h2 {
+        margin-right: 10px;
+      }
+
+      .table-head {
+        margin: 20px 0;
+      }
+
+      .col {
+        flex-basis: 45%;
+      }
+
+      .bnav-items {
+        padding: 0;
+      }
+
+      /* HNX  */
+      #hnx {
+        background-color: #222036;
+        padding: 20px 0;
+        z-index: -2;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .exchange-platform {
+          padding: 20px;
+        }
+        .busi-nav,
+        .business-table {
+          overflow: scroll;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .platform h2 {
+          font-size: 40px;
+        }
+      }
+      button {
+        background: none;
+        appearance: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+        -moz-appearance: none;
+        border: none;
+        cursor: pointer;
+      }
+      .pagination-buttons {
+        display: flex;
+        justify-content: center;
+      }
+      .page-btn {
+        background: #ddd;
+        color: #2c303a;
+        height: 35px;
+        border-radius: 2px;
+        padding: 0 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: background 0.3s ease;
+        margin: 0 2px;
+      }
+
+      .page-btn:first-of-type {
+        margin-left: 0;
+      }
+
+      .page-btn:last-of-type {
+        margin-right: 0;
+      }
+
+      .page-btn:not([class$="-page"]) {
+        width: 35px;
+      }
+
+      .pagination-buttons {
+        display: flex;
+        align-items: center;
+      }
+
+      .page-btn[class*="-page"] {
+        background: #ccc;
+        font-size: 0.6em;
+        font-weight: 700;
+      }
+
+      .page-btn.active {
+        background: #717790;
+        color: #fff;
+      }
+
+      .page-btn[disabled] {
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="background"></div>
+    <!-- header section -->
+    <section id="header"></section>
+    <!-- end header section  -->
+
+    <div id="hose">
+      <div class="exchange-platform">
+        <div class="hose-info">
+          <div class="platform">
+            <h2>
+              Sàn
+              <h2 class="highlight">HOSE</h2>
+            </h2>
+          </div>
+          <div class="busi-nav">
+            <div class="nav-row">
+              <div class="nav-slogan">
+                <a href="#">
+                  <h5>Ngành</h5>
+                </a>
+              </div>
+              <div class="nav-content">
+                <ul class="bnav-items">
+                  <li class="bnav-item">
+                    <a href="major.html">Tài Chính</a>
+                  </li>
+                  <li class="bnav-item">
+                    <a href="major.html">Sản xuất</a>
+                  </li>
+                  <li class="bnav-item">
+                    <a href="major.html">Bất động sản</a>
+                  </li>
+                  <li class="bnav-item">
+                    <a href="major.html">Bán lẻ</a>
+                  </li>
+                  <li class="bnav-item">
+                    <a href="major.html">Khai Khoáng</a>
+                  </li>
+                  <li class="bnav-item">
+                    <a href="major.html">CCQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="table-head">
+              <h3 id="taichinh-hose">Ngành Tài Chính</h3>
+            </div>
+            <div class="business-table">
+              <table class="table-content">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Mã CK</th>
+                    <th>Tên công ty</th>
+                    <th>Ngành</th>
+                    <th>Ngày GDĐT</th>
+                    <th>Khối lượng NY, ĐKGD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>VPB</td>
+                    <td>
+                      <a href="#">Ngân hàng TMCP Việt Nam Thịnh Vượng</a>
+                    </td>
+                    <td>Tài chính và bảo hiểm</td>
+                    <td>17/08/2017</td>
+                    <td>6,743,423,601</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>VCB</td>
+                    <td>Ngân hàng TMCP Ngoại thương Việt Nam</td>
+                    <td>Tài chính và bảo hiểm</td>
+                    <td>30/06/2009</td>
+                    <td>5,589,091,262</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>MBB</td>
+                    <td>Ngân hàng TMCP Quân Đội</td>
+                    <td>Tài chính và bảo hiểm</td>
+                    <td>01/11/2011</td>
+                    <td>5,214,084,052</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>BID</td>
+                    <td>Ngân hàng TMCP Đầu tư và Phát triển Việt Nam</td>
+                    <td>Tài chính và bảo hiểm</td>
+                    <td>24/01/2014</td>
+                    <td>5,058,523,816</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>CTG</td>
+                    <td>Ngân hàng TMCP Công Thương Việt Nam</td>
+                    <td>Tài chính và bảo hiểm</td>
+                    <td>16/07/2009</td>
+                    <td>4,805,750,609</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>ACB</td>
+                    <td>Ngân hàng TMCP Á Châu</td>
+                    <td>Tài chính và bảo hiểm</td>
+                    <td>09/12/2020</td>
+                    <td>3,884,050,358</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>SHB</td>
+                    <td>Ngân hàng TMCP Sài Gòn - Hà Nội</td>
+                    <td>Tài chính và bảo hiểm</td>
+                    <td>11/10/2021</td>
+                    <td>3,619,398,113</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>TCB</td>
+                    <td>Ngân hàng TMCP Kỹ thương Việt Nam</td>
+                    <td>Tài chính và bảo hiểm</td>
+                    <td>04/06/2018</td>
+                    <td>3,517,238,514</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>HDB</td>
+                    <td>Ngân hàng TMCP Phát triển TP. HCM</td>
+                    <td>Tài chính và bảo hiểm</td>
+                    <td>05/01/2018</td>
+                    <td>2,907,632,132</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>VIB</td>
+                    <td>Ngân hàng TMCP Quốc tế Việt Nam</td>
+                    <td>Tài chính và bảo hiểm</td>
+                    <td>10/11/2020</td>
+                    <td>2,536,807,534</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination-buttons">
+        <button type="button" class="page-btn prev-page">prev</button>
+        <button type="button" class="page-btn">1</button>
+        <button type="button" class="page-btn active">2</button>
+        <button type="button" class="page-btn">3</button>
+        <button type="button" class="page-btn next-page">next</button>
+      </div>
+    </div>
+
+    <section id="footer"></section>
+    <script type="module" src="../js/business.js"></script>
+  </body>
+</html>

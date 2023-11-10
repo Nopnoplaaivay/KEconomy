@@ -3,60 +3,46 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KECONOMY</title>
+    <title>Vĩ mô</title>
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/macro.css" />
     <style>
       img {
-        width: 100%;
-        height: 100%;
-        border-radius: 8px;
+        border-radius: 5px;
       }
-
       .container {
         margin-bottom: 30px;
+        padding: 0 50px;
+      }
+      .col-1 {
+        flex-basis: 30%;
       }
 
-      .macro-hero,
-      .macro-board {
-        max-width: 1380px;
+      .macro-head,
+      .container .row ,
+      .macro-board,
+      .line
+      {
+        max-width: 1360px;
         margin: auto;
       }
 
-      .macro-hero .macro-nav {
-        margin-bottom: 10px;
+      /* .macro-hero  */
+      .macro-img {
+        flex-basis: 30%;
       }
-
-      .macro-hero .bnav-items {
-        padding: 0;
-      }
-
-      .col-1 {
-        flex-basis: 35%;
-      }
-
-      .col-2 {
-        flex-basis: 60%;
-        text-align: right;
-        display: flex;
-        justify-content: flex-end;
-      }
-
-      .limited-slide {
+      .macro-img img {
         width: 100%;
+        height: 100%;
       }
+      .macro-hero .macro-table {
+        flex-basis: 60%;
+      }
+      /* end macro-hero  */
 
+      /* macro head  */
       .macro-head {
         margin: 20px 0;
         display: flex;
-      }
-
-      .list-imgs img {
-        width: 100%;
-      }
-
-      .macro-img {
-        height: 100%;
       }
 
       .macro-head img {
@@ -75,7 +61,9 @@
         margin: 0 5px;
         padding: 0;
       }
+      /* macro head  */
 
+      /* .macro-nav */
       .macro-nav {
         margin: 0 0 10px 0;
       }
@@ -107,9 +95,14 @@
         width: 100%;
       }
 
+      .macro-board .limited-slide {
+        margin-bottom: 30px;
+      }
+
       .macro-board .bnav-items {
         margin: 0;
       }
+      /* end macro-nav */
 
       .macro-table {
         flex-basis: 60%;
@@ -145,30 +138,63 @@
         text-align: center;
       }
 
-      .macro-table img {
+      /* .macro-table img {
         margin-bottom: 20px;
-      }
-
+      } */
+/* 
       @media screen and (max-width: 1440px) {
         .container {
-          padding: 25px;
+          padding: 40px;
         }
-      }
+      } */
       @media screen and (max-width: 1240px) {
         .container {
           padding: 20px;
         }
+        .macro-head {
+          margin: 0;
+        }
         .row {
           flex-wrap: wrap;
         }
-        .macro-hero .col-1 {
-          display: none;
-        }
-        .macro-hero .col-2 {
+        .macro-board .col-1 {
+          margin-top: 50px;
           flex-basis: 100%;
+          padding: 0 100px;
         }
+
         .macro-table {
           flex-basis: 100%;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        .container {
+          padding: 20px;
+        }
+        .macro-img {
+          display: none;
+        }
+        .macro-hero .macro-table {
+          flex-basis: 100%;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+        .macro-img {
+          flex-basis: 100%;
+          display: block;
+        }
+        .macro-hero .macro-table {
+          display: none;
+        }
+        .macro-board .col-1 {
+          padding: 0 20px;
+        }
+        .line {
+          display: none;
         }
       }
     </style>
@@ -181,51 +207,57 @@
     <section id="header"></section>
     <!-- end header section  -->
 
+    <!-- home navigate -->
     <div class="container">
-      <div class="macro-hero">
-        <div class="macro-head">
-          <a href="index.html">
-            <img src="../img/svg/home-angle-svgrepo-com.svg" alt="" />
-          </a>
-          <h5>/ Vĩ Mô</h5>
-        </div>
-        <div class="row">
-          <div class="col-1">
+      <div class="macro-head">
+        <a href="index.html">
+          <img src="../img/svg/home-angle-svgrepo-com.svg" alt="" />
+        </a>
+        <h5>/ Vĩ Mô</h5>
+      </div>
+    </div>
+    <!-- home navigate -->
+
+    <!-- hero  -->
+    <div class="container">
+      <div class="row">
+        <div class="macro-hero">
+          <div class="row">
             <div class="macro-img">
-              <img src="../img/gdp.png" alt="" />
+              <img src="../img/gdp.png" alt="">
             </div>
-          </div>
-          <div class="col-2">
-            <div class="macro-nav">
-              <div class="nav-row">
-                <div class="nav-content">
-                  <ul class="bnav-items">
-                    <li class="bnav-item idx-0">
-                      <a href="#" class="active">GDP</a>
-                    </li>
-                    <li class="bnav-item idx-1">
-                      <a href="#">Lạm Phát</a>
-                    </li>
-                    <li class="bnav-item idx-2">
-                      <a href="#">Cán cân thương mại</a>
-                    </li>
-                    <li class="bnav-item idx-3">
-                      <a href="#">FDI</a>
-                    </li>
-                    <li class="bnav-item idx-4">
-                      <a href="#">Tỷ Giá</a>
-                    </li>
-                  </ul>
+            <div class="macro-table">
+              <div class="macro-nav">
+                <div class="nav-row">
+                  <div class="nav-content">
+                    <ul class="bnav-items">
+                      <li class="bnav-item idx-0">
+                        <a href="#" class="active">GDP</a>
+                      </li>
+                      <li class="bnav-item idx-1">
+                        <a href="#">Lạm Phát</a>
+                      </li>
+                      <li class="bnav-item idx-2">
+                        <a href="#">Cán cân thương mại</a>
+                      </li>
+                      <li class="bnav-item idx-3">
+                        <a href="#">FDI</a>
+                      </li>
+                      <li class="bnav-item idx-4">
+                        <a href="#">Tỷ Giá</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="limited-slide">
                 <div class="slide-show">
                   <div class="list-imgs">
-                    <img src="../img/gdp-chart.png" alt="" />
-                    <img src="../img/lamphat-chart.png" alt="" />
-                    <img src="../img/cctm-chart.png" alt="" />
-                    <img src="../img/fdi-chart.png" alt="" />
-                    <img src="../img/tygia-chart.png" alt="" />
+                    <img src="../img/cpi-hh.png" alt="" />
+                    <img src="../img/sx-cn.png" alt="" />
+                    <img src="../img/banle.png" alt="" />
+                    <img src="../img/xnk.png" alt="" />
+                    <img src="../img/fdi.png" alt="" />
                   </div>
                   <div class="btns">
                     <div class="btn-l btn">
@@ -242,7 +274,11 @@
         </div>
       </div>
     </div>
+    <!-- end hero  -->
 
+    <div class="line"></div>
+
+    <!-- tables  -->
     <div class="container">
       <div class="macro-board">
         <div class="macro-nav">
@@ -288,15 +324,15 @@
             <div class="limited-slide">
               <div class="slide-show">
                 <div class="list-imgs">
+                  <img src="../img/tindung.png" alt="" />
+                  <img src="../img/ttrg-mo.png" alt="" />
+                  <img src="../img/tygia-ls.png" alt="" />
                   <img src="../img/gdp-hienhanh.png" alt="" />
                   <img src="../img/cpi-hh.png" alt="" />
                   <img src="../img/sx-cn.png" alt="" />
                   <img src="../img/banle.png" alt="" />
                   <img src="../img/xnk.png" alt="" />
                   <img src="../img/fdi.png" alt="" />
-                  <img src="../img/tindung.png" alt="" />
-                  <img src="../img/ttrg-mo.png" alt="" />
-                  <img src="../img/tygia-ls.png" alt="" />
                 </div>
                 <div class="btns">
                   <div class="btn-l btn">
@@ -459,6 +495,7 @@
         </div>
       </div>
     </div>
+    <!-- end tables  -->
 
     <section id="footer"></section>
     <script type="module" src="../js/macro.js"></script>

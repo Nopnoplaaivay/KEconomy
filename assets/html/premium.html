@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KNEWS Premium</title>
+    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+      body {
+        height: 100%;
+      }
+
+      .container {
+        padding: 20px;
+        transition: 0.5s ease;
+      }
+      .container .row {
+        max-width: 1400px;
+        margin: auto;
+      }
+      .intro {
+        max-width: 840px;
+        margin: 20px 0 50px;
+      }
+      .note {
+        width: 840px;
+        margin: 100px 0 50px;
+      }
+      .premium-table {
+        flex-basis: 60%;
+      }
+      .note ul {
+        margin: 30px 40px;
+      }
+      .container li {
+        color: #fff;
+        list-style: circle;
+        margin: 5px 0;
+      }
+      .p-intro {
+        margin: 30px 0;
+      }
+      .p-intro h2 {
+        text-align: center;
+      }
+      .row.packages {
+        gap: 20px;
+        margin: 30px auto;
+        flex-wrap: wrap;
+      }
+      .package {
+        flex-basis: 35%;
+        padding: 90px 0;
+        margin: 0 30px;
+      }
+      .package-box {
+        border-top: 3px solid #fff;
+        flex-basis: 40%;
+        max-width: 350px ;
+        height: auto;
+        margin: 20px auto;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.289);
+        transition: 0.5s ease;
+        flex-basis: 100%;
+      }
+      .package-box:hover {
+        cursor: pointer;
+        /* transform: translate(0px, -15px);  */
+        box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.3);
+        transform: translate(0px, -5px);
+      }
+      .pk-img {
+        position: relative;
+      }
+      .pk-img img {
+        width: 100%;
+        height: 120px;
+        opacity: 0.5;
+        filter: grayscale(1) brightness(1);
+      }
+      .pk-img h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        text-align: center;
+        text-wrap: nowrap;
+        transition: 0.5s ease;
+      }
+      .pk-items {
+        padding: 10px;
+      }
+      .pk-items h4 {
+        margin: auto;
+      }
+      @media screen and (max-width: 1300px) {
+        .container .row {
+          flex-wrap: wrap;
+        }
+        .premium-table {
+          flex-basis: 100%;
+        }
+        .package-box {
+          flex-basis: 45%;
+        }
+        .package {
+          flex-basis: 100%;
+          padding: 0 170px;
+        }
+        .intro,
+        .note {
+          width: 90%;
+          margin: 40px 0;
+        }
+        .note {
+          margin: 50px auto;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        .package-box {
+          flex-basis: 100%;
+        }
+        .package {
+          padding: 0 50px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .package {
+          padding: 0 5px;
+        }
+        .pk-img h3 {
+          font-size: 30px;
+        }
+        h1 {
+          font-size: 40px;
+          margin-bottom: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header  -->
+    <section id="header"></section>
+    <!-- end header  -->
+
+    <!-- premium package -->
+    <div class="container">
+      <div class="row">
+        <div class="premium-table">
+          <div class="intro">
+            <h1>KNEWS Plans and Pricing</h1>
+            <p>
+              KNEWS offers a variety of plans to meet your entertainment needs.
+            </p>
+            <p>
+              As a KNEWS member, you are charged monthly on the date you signed
+              up. A KNEWS account is for people who live together in a single
+              household. Learn more about sharing KNEWS.
+            </p>
+          </div>
+          <table class="table-content">
+            <thead>
+              <tr>
+                <th><h5>Các loại gói</h5></th>
+                <th><h5>Đặc điểm</h5></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Miễn Phí</strong></td>
+                <td>
+                  <ul>
+                    <li>Đọc 10 bài báo/ngày</li>
+                    <li>Xem dữ liệu miễn phí</li>
+                    <li>Đọc báo cáo phân tích miễn phí</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Cơ bản</strong></td>
+                <td>
+                  <ul>
+                    <li>Đọc 50 bài báo/ngày</li>
+                    <li>Xem dữ liệu Realtime</li>
+                    <li>Đọc báo cáo phân tích của chuyên viên cấp cao</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>VIP</strong></td>
+                <td>
+                  <ul>
+                    <li>Đọc 100 bài báo/ngày</li>
+                    <li>Copy writing</li>
+                    <li>Tải về dữ liệu chứng khoán</li>
+                    <li>Tải về các báo cáo phân tích</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Premium</strong></td>
+                <td>
+                  <ul>
+                    <li>Đọc báo không giới hạn</li>
+                    <li>Tải về dữ liệu chứng khoán</li>
+                    <li>Sử dụng dịch vụ phân tích dữ liệu online</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="note">
+            <h4>Pricing (Vietnamese Dong)</h4>
+            <ul>
+              <li>Miễn Phí: 0,000 VND / tháng</li>
+              <li>Cơ bản: 80,000 VND / tháng</li>
+              <li>Tiêu chuẩn: 600,000 VND / tháng</li>
+              <li>Premium: 2,000,000 VND / tháng</li>
+            </ul>
+            <p>
+              Depending on where you live, you may be charged taxes in addition
+              to your subscription price.
+            </p>
+            <p>
+              Sign up for KNEWS today and choose from several payment options.
+              You can easily change your plan or cancel at any time.
+            </p>
+          </div>
+        </div>
+        <div class="package">
+          <div class="p-intro">
+            <h2>Pricing</h2>
+          </div>
+          <div class="row packages">
+            <div class="package-box">
+              <a href="payment.html">
+                <div class="pk-content">
+                  <div class="pk-img">
+                    <img src="../img/stock-4.jpg" alt="" />
+                    <h3>Free Tier</h3>
+                  </div>
+                  <div class="pk-items">
+                    <div class="col">
+                      <h4 class="mini-bold sep-10">
+                        <img
+                          class="icon v-al-bot"
+                          src="../img/svg/money-dollars-svgrepo-com.svg"
+                          alt=""
+                        />0.00$ / Month
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="package-box">
+              <a href="payment.html">
+                <div class="pk-content">
+                  <div class="pk-img">
+                    <img src="../img/stock-4.jpg" alt="" />
+                    <h3>Cơ bản</h3>
+                  </div>
+                  <div class="pk-items">
+                    <div class="col">
+                      <h4 class="mini-bold sep-10">
+                        <img
+                          class="icon v-al-bot"
+                          src="../img/svg/money-dollars-svgrepo-com.svg"
+                          alt=""
+                        />5.99$ / Month
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="package-box">
+              <a href="payment.html">
+                <div class="pk-content">
+                  <div class="pk-img">
+                    <img src="../img/stock-4.jpg" alt="" />
+                    <h3>Tiêu chuẩn</h3>
+                  </div>
+                  <div class="pk-items">
+                    <div class="col">
+                      <h4 class="mini-bold sep-10">
+                        <img
+                          class="icon v-al-bot"
+                          src="../img/svg/money-dollars-svgrepo-com.svg"
+                          alt=""
+                        />29.99$ / Month
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="package-box">
+              <a href="payment.html">
+                <div class="pk-content">
+                  <div class="pk-img">
+                    <img src="../img/stock-4.jpg" alt="" />
+                    <h3>Premium</h3>
+                  </div>
+                  <div class="pk-items">
+                    <div class="col">
+                      <h4 class="mini-bold sep-10">
+                        <img
+                          class="icon v-al-bot"
+                          src="../img/svg/money-dollars-svgrepo-com.svg"
+                          alt=""
+                        />99.99$ / Month
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end premium package -->
+
+    <!-- footer  -->
+    <section id="footer"></section>
+    <!-- end footer  -->
+
+    <script type="module" src="../js/premium.js"></script>
+  </body>
+</html>
